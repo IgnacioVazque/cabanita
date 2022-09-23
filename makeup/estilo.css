@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Outfit:wght@400;700&family=Roboto:wght@100&display=swap');
+
+:root {
+    --verde: hsl(179, 27%, 51%);
+    --rojo: hsl(356, 75%, 57%);
+    --amarillo: hsl(53, 72%, 50%);
+}
+
+/* a todo el div que contiene id le coloca un margin top, esto para que al direccionar no quede detrras del menu fixed */
+div [id] {
+    scroll-margin-top: 8rem;
+}
+
+h2 {
+    color: var(--verde);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;  /*Quitamos el margen de la pagina por defecto*/
+    font-family: "Josefin Sans";
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /*deshabilita el scroll horizontal*/
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--amarillo);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    font-size: 1.20rem;
+    /* margin-top: 8rem; */
+    padding-top: 5rem;
+}
+
+#main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Arreglar media para que cuando llegue a 500 px o menos se pegue al icono y no haga salto de linea */
+@media (min-width: 596px) {
+    .titulo {
+        margin-left: 0;
+    }
+}
+
+.titulo {
+    padding-top: 0.5rem;
+    color: var(--rojo);
+}
+
+.menu-flex {
+    display: flex;  /*flex para alinear el icono y el nombre en una sola fila*/
+    /* background-color: white; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+/* Se aplico margin para separar los elementos */
+.menu-flex h1{
+    margin-left: 2.5rem;  
+    margin-right: .3rem;
+}
+
+/* estilos productos */
+
+.producto {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.prod {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item2 {
+    /* align-self: flex-end; */
+    width: 20%;
+}

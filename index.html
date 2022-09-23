@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="makeup/estilo.css">
+    <title>BAR LA CALMA </title>
+</head>
+<body>
+    
+    <div id="sidenav" class="sidenav">
+        <a href="javascritp:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#cervezas" onclick="closeNav()">Cervezas</a>
+        <a href="#mixtas" onclick="closeNav()">Bebidas Mixtas</a>
+        <a href="#botellas" onclick="closeNav()">Botellas</a>
+        <a href="#alimentos" onclick="closeNav()">Alimentos</a>
+        <a href="#sina" onclick="closeNav()">Sin Alcohol</a>
+        <a href="#postres" onclick="closeNav()">Postres</a>
+    </div>
+
+    <!-- Uase cualquier elemeto para abrir el sidenav -->
+    <!-- <span onclick="openNav()" menu></span> -->
+    
+    <!-- para que el menu empuje a toda la pagina ponerlo dentro de este main -->
+    <div class="fijo">
+        <div class="menu-flex">
+            <h1 style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</h1>
+            <h1 class="titulo">BAR LA CALMA</h1>
+        </div>
+    </div>
+
+    <div id="main" class="main">
+        <div class="producto cerveza" id="cervezas">
+            <h2>CERVEZAS</h2>
+            <div class="prod">
+                <div class="prod item1">Cerveza XX Lager, Ámbar</div>
+                <div class="prod item2">$80.00</div>
+            </div> <hr>
+
+            <div class="prod">
+                <div class="prod item1">Cerveza Indio</div>
+                <div class="prod item2">$70.00</div>
+            </div> <hr>
+
+            <div class="prod">
+                <div class="prod item1">Negra modelo, Modelo especial</div>
+                <div class="prod item2">$90.00</div>
+            </div> <hr>
+            
+            <div class="prod">
+                <div class="prod item1">Bohemia Obscura</div>
+                <div class="prod item2">$40.00</div>
+            </div> <hr>
+        </div>
+
+        <div class="producto" id="mixtas">
+            <h2>BEBIDAS MIXTAS</h2>
+            <div class="prod">
+                <div class="prod item1">Mezcalitos</div>
+                <div class="prod item2">$00.00</div>
+            </div> <hr>
+
+            <div class="prod">
+                <div class="prod item1">Mojitos</div>
+                <div class="prod item2">$80.00</div>
+            </div> <hr>
+
+            <div class="prod">
+                <div class="prod item1">Piña Colada</div>
+                <div class="prod item2">$80.00</div>
+            </div> <hr>
+            
+            <div class="prod">
+                <div class="prod item1">Margaritas</div>
+                <div class="prod item2">$00.00</div>
+            </div> <hr>
+
+            <div class="prod">
+                <div class="prod item1">Gin & Tonic</div>
+                <div class="prod item2">$00.00</div>
+            </div> <hr>
+        </div>
+
+        <div class="producto" id="botellas">
+            <h2>BOTELLAS</h2>
+            <div class="prod">
+                <div class="prod item1">Vino Tinto Finca Las Moras</div>
+                <div class="prod item2">$.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Vino Tinto Trapiche Malbec</div>
+                <div class="prod item2">$.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Vino Tinto Pata Negra</div>
+                <div class="prod item2">$.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Vino Riunite, Rossi, 4 Soles</div>
+                <div class="prod item2">$.00</div>
+            </div> <hr>
+        </div>
+
+        <div class="producto" id="alimentos">
+            <h2>ALIMENTOS</h2>
+            <div class="prod">
+                <div class="prod item1">Lasagna de carne</div>
+                <div class="prod item2">$55.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Pizza Grande: Peperoni, 4 quesos</div>
+                <div class="prod item2">$180.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Rebanada de Pizza</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Papas con Especias al Horno</div>
+                <div class="prod item2">$34.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Papas a la Francesa</div>
+                <div class="prod item2">$35.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Papas Gajo</div>
+                <div class="prod item2">$35.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Hot Dog con queso, tocino y piña</div>
+                <div class="prod item2">$28.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Alitas</div>
+                <div class="prod item2">$55.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Bonelles</div>
+                <div class="prod item2">$55.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Taco Bistec</div>
+                <div class="prod item2">$20.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Taco Suadero</div>
+                <div class="prod item2">$20.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Taco Arrachera</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+        </div>
+
+        <div class="producto" id="sina">
+            <h2>SIN ALCOHOL</h2>
+            <div class="prod">
+                <div class="prod item1">Sangria Preparada</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Limonada</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Naranjada</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Resfrescos</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Agua natural</div>
+                <div class="prod item2">$10.00</div>
+            </div> <hr>
+        </div>
+
+        <div class="producto" id="postres">
+            <h2>POSTRES</h2>
+            <div class="prod">
+                <div class="prod item1">Brocheta: Fresas con Chocolate Uva con Philadelfia</div>
+                <div class="prod item2">$15.00</div>
+            </div> <hr>
+            <div class="prod">
+                <div class="prod item1">Cheescake</div>
+                <div class="prod item2">$25.00</div>
+            </div> <hr>
+        </div>
+
+    </div>
+    
+    <script src="makeup/fun.js"></script>
+</body>
+</html>
