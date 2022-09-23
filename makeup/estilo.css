@@ -88,7 +88,7 @@ body {
 
 .menu-flex {
     display: flex;  /*flex para alinear el icono y el nombre en una sola fila*/
-    /* background-color: white; */
+    background-color: white;
     position: fixed;
     left: 0;
     top: 0;
